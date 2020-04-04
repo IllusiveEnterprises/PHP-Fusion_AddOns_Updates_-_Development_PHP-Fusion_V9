@@ -1,4 +1,5 @@
-# PHP-FusionUpdatingAddonsForV9
+# PHP-Fusion_AddOns_Updates_-_Development_PHP-Fusion_V9
+
 This is a Private Repository for the Updating of PHP-Fusion v6, v7 &amp; v8 Add-Ons to work with PHP-Fusion v9. Only those with invited and with proper clearance that are trusted fully can access this Repository after you have filled out some Forms and signed some Documents. You can always request access to the Repository but you will be required to fill out some Forms & Sign some Documents electronically. All electronically signed Documents are LEGALLY BINDING CONTRACTS. The files in this Repository are Private and are NOT allowed to be released to the General Public unless the Repository Owners give permission to do so.
 
 To request access to this Private Respository to help update Add-Ons, become an Initial Tester, Beta Tester, Alpha Tester or Final Release Tested, please contact Amber at PHPFusion9AddOnsGitHub@gmail.com or at PHPFusionAddons@IllusiveEnterprisesProjects.com. Check the CONTACTUS.md file for contact information for everyone in charge of this Project. We would love to have reliable, trustworthy and respectful individuals and teams help us with this Project. 
