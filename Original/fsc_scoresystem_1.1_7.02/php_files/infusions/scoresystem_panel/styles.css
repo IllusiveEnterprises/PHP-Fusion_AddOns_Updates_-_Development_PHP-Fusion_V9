@@ -1,0 +1,42 @@
+/* Positive Transfer Class*/
+.score_tra_p {
+	color:#FFFFFF;
+	font-weight:bold;
+	background-color:#2CA261;
+}
+/* Negative Transfer Class*/
+.score_tra_n {
+	color:#FFFFFF;
+	font-weight:bold;
+	background-color:#F55443;
+}
+/* Open Transfer Class*/
+.score_tra_o {
+	color:#FFFFFF;
+	font-weight:bold;
+	background-color:#6E9CE0;
+}
+/* Storno Transfer Class*/
+.score_tra_s {
+	color:#FFFFFF;
+	font-weight:bold;
+	background-color:#F55443;
+}
+/* Positive Account Class*/
+.score_positiv {
+	color:#FFFFFF;
+	font-weight:bold;
+	background-color:#2CA261;
+}
+/* Negative Account Class*/
+.score_negativ {
+	color:#FFFFFF;
+	font-weight:bold;
+	background-color:#F55443;
+}
+/* Ban Account Class*/
+.score_ban {
+	color:#FFFFFF;
+	font-weight:bold;
+	background-color:#BFBFBF;
+}
