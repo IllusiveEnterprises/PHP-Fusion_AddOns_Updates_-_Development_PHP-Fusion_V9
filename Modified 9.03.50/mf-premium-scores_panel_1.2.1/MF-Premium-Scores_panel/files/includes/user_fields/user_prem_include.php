@@ -21,9 +21,8 @@ if (!defined("IN_FUSION")) { die("Access Denied"); }
 include INFUSIONS."MF-Premium-Scores_panel/infusion_db.php";
 
 if ($profile_method == "input") {
-
-    defined('IN_FUSION') || exit;
-
+    $icon = "<img src='".IMAGES."prem.png' title='Premium' alt='Premium'/>";
+    $user_fields = $icon." ".$locale['uf_prem'];
 
     } else if ($profile_method == "display") {
     //prem
