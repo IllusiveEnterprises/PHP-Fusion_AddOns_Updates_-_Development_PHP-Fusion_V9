@@ -22,7 +22,13 @@ include INFUSIONS."MF-Premium-Scores_panel/infusion_db.php";
 
 if ($profile_method == "input") {
     $icon = "<img src='".IMAGES."prem.png' title='Premium' alt='Premium'/>";
-    $user_fields = $icon." ".$locale['uf_prem'];
+    $options += [
+        'type'   => 'hidden',
+        'inline' => TRUE,
+        'label_icon'  => $icon
+        ];
+
+    $user_fields = form_text('uf_prem', $locale['uf_prem'], $field_value, $options);
 
     } else if ($profile_method == "display") {
     //prem
