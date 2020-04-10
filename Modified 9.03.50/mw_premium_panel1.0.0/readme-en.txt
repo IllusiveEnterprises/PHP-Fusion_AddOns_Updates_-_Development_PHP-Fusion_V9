@@ -1,4 +1,4 @@
---------------------------------------
+readme-en.txt--------------------------------------
 [INFUSION] MW Premium Panel V1.0.0 (v7)
 For PHP Fusion Version 9
 by Matze-W @ (http://www.deeone.de)
