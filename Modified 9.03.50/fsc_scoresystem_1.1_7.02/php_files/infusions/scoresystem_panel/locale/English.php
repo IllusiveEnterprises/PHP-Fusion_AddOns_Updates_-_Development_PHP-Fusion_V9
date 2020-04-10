@@ -1,4 +1,4 @@
-<?php
+English.php<?php
 $locale['pfss_title'] = "ScoreSystem";
 $locale['pfss_desc'] = "ScoreSystem - Compact system for managing score points";
 $locale['pfss_install_admin1'] = "ScoreSystem";
