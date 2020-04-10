@@ -20,6 +20,14 @@
 require_once "../../maincore.php";
 require_once THEMES."templates/header.php";
 
+
+if (file_exists(INFUSIONS."scoresystem_panel/locale/".$settings['locale'].".php")) {
+    // Load the locale file matching the current site locale setting.
+    include INFUSIONS."scoresystem_panel/locale/".$settings['locale'].".php";
+} else {
+    // Load the infusion's default locale file.
+    include INFUSIONS."scoresystem_panel/locale/German.php";
+}
 if (!iMEMBER) { redirect(BASEDIR."index.php"); }
 
 if (!isset($_GET['rowstart']) || !isnum($_GET['rowstart'])) { $_GET['rowstart']=0; }

@@ -26,8 +26,12 @@ if (file_exists(INFUSIONS."scoresystem_panel/locale/".$settings['locale'].".php"
     // Load the infusion's default locale file.
     include INFUSIONS."scoresystem_panel/locale/German.php";
 }
-
 if (defined("SCORESYSTEM")) {
+    $score_result = dbquery("SELECT * FROM ".DB_SCORE_SETTINGS);
+    if (dbrows($score_result)) { // Laden der Haupteinstellungen und l�sche alte Transfers bei Aktivierung
+        $score_settings = dbarray($score_result);
+    }
+
 	openside($locale['pfss_open0']);
 	if (iMEMBER) {
 		if (!score_ban($userdata['user_id'])) {
