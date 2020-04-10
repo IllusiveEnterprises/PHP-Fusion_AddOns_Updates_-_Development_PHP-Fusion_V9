@@ -19,6 +19,14 @@
 +--------------------------------------------------------*/
 if (!defined("IN_FUSION")) { die("Access Denied"); }
 
+if (file_exists(INFUSIONS."scoresystem_panel/locale/".$settings['locale'].".php")) {
+    // Load the locale file matching the current site locale setting.
+    include INFUSIONS."scoresystem_panel/locale/".$settings['locale'].".php";
+} else {
+    // Load the infusion's default locale file.
+    include INFUSIONS."scoresystem_panel/locale/German.php";
+}
+
 if (defined("SCORESYSTEM")) {
 	openside($locale['pfss_open0']);
 	if (iMEMBER) {
