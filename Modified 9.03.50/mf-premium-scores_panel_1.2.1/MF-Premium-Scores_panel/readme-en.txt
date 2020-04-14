@@ -42,7 +42,60 @@ Then the infusion can be installed via System Admin -> Infusions.
 After the installation, all you have to do is put on the panel and you're ready to go.
 
 OPTIONAL Activate Premium Profile Field: User Admin -> Profile Fields -> Premium Status: activate
-	
+
+
+
+for PHP-Fusion 9.03.50:
+3.8 Open file /includes/dynamics/includes/form_text.php and search for (around line 111):
+   $valid_types = [
+        'text', 'number', 'password', 'email', 'url', 'color', 'date', 'datetime', 'datetime-local', 'month', 'range', 'search', 'tel', 'time', 'week',
+    ];
+
+
+replace with:
+   $valid_types = [
+        'text', 'number', 'password', 'email', 'url', 'color', 'date', 'datetime', 'datetime-local', 'month', 'range', 'search', 'tel', 'time', 'week', 'hidden',
+    ];
+
+
+search for (arond line 162):
+    switch ($options['type']) {
+        case "number":
+            $input_type = "number";
+            $min = ((!empty($options['number_min']) || $options['number_min'] === "0") && isnum($options['number_min']) ? "min='".$options['number_min']."' " : '');
+            $max = ((!empty($options['number_max']) || $options['number_max'] === "0") && isnum($options['number_max']) ? "max='".$options['number_max']."' " : '');
+            // $step = "step='".str_replace(",", ".", $options['number_step'])."' ";
+            $step = "step='any' ";
+            break;
+        case "text":
+            $input_type = "text";
+            break;
+        case "password":
+            $input_type = "password";
+
+
+replace with:
+
+    switch ($options['type']) {
+        case "number":
+            $input_type = "number";
+            $min = ((!empty($options['number_min']) || $options['number_min'] === "0") && isnum($options['number_min']) ? "min='".$options['number_min']."' " : '');
+            $max = ((!empty($options['number_max']) || $options['number_max'] === "0") && isnum($options['number_max']) ? "max='".$options['number_max']."' " : '');
+            // $step = "step='".str_replace(",", ".", $options['number_step'])."' ";
+            $step = "step='any' ";
+            break;
+        case "text":
+            $input_type = "text";
+            break;
+        case "hidden":
+            $input_type = "hidden";
+            break;
+        case "password":
+            $input_type = "password";
+
+Save and upload
+
+
 ---------------------------------------
 3. Hints
 ---------------------------------------
